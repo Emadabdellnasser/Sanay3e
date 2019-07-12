@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#c7c7c7"
+    android:paddingTop="30dp"
+    tools:context=".FacebookAccountActivity">
+
+
+    <ImageView
+        android:id="@+id/loginlogo"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginEnd="@dimen/edit_text_margin_right"
+        android:layout_marginLeft="@dimen/edit_text_margin_left"
+        android:layout_marginRight="@dimen/edit_text_margin_right"
+        android:layout_marginStart="@dimen/edit_text_margin_left"
+        android:contentDescription="@null"
+        android:src="@drawable/logo_official" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/loginlogo"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:gravity="center_horizontal"
+        android:padding="3dp"
+        android:text="@string/login_intro"
+        android:textColor="@color/mido"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+
+    <RelativeLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/textwnkle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:padding="4dp"
+            android:text="@string/by_continuing_you_agree_to"
+            android:textColor="@color/mido"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/textwnkle"
+            android:onClick="termPrivacy"
+            android:text="@string/terms_amp_policy"
+            android:textColor="@color/mido"
+            android:layout_toRightOf="@+id/textwnkle" />
+
+
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/phoneLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/layout"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:background="@drawable/backsec"
+        android:padding="10dp"
+        android:text="@string/enter_your_mobile_number"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+
+        />
+
+
+</RelativeLayout>
+
+

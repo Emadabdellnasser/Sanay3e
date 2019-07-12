@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"
+    tools:context=".activtiy.user.SelectAtivity">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"
+        tools:context=".activtiy.user.SelectAtivity">
+
+        <include layout="@layout/bar_layout" />
+
+        <include layout="@layout/content_spinner" />
+
+        <include layout="@layout/recycer_activity" />
+    </LinearLayout>
+
+    <include layout="@layout/ads_layout" />
+
+</FrameLayout>

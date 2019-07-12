@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+
+    <android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#c7c7c7"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/count"
+            android:layoutDirection="rtl"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:scaleX=".9"
+            android:scaleY="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layoutDirection="rtl"
+                android:orientation="vertical">
+
+                <design.MyTextView
+                    android:id="@+id/main_details"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="المعلومات الاساسية"
+                    android:textColor="#E51937"
+                    android:textSize="15dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/backwhite"
+                    android:layoutDirection="rtl"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="20dp"
+                    android:paddingRight="10dp"
+
+
+                    >
+
+                    <EditText
+                        android:id="@+id/ed_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#c7c7c7"
+                        android:gravity="right"
+                        android:hint="الاسم"
+                        android:inputType="textEmailAddress" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/backwhite"
+                    android:layoutDirection="rtl"
+                    android:orientation="horizontal"
+                    android:paddingRight="10dp">
+
+                    <EditText
+                        android:enabled="false"
+                        android:id="@+id/ed_phone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#c7c7c7"
+                        android:gravity="right"
+                        android:hint="رقم التليفون "
+                        android:inputType="number" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/backwhite"
+                    android:layoutDirection="rtl"
+                    android:orientation="horizontal"
+                    android:paddingRight="10dp"
+
+
+                    >
+
+                    <EditText
+                        android:id="@+id/ed_id_national"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#c7c7c7"
+                        android:gravity="right"
+                        android:hint="الرقم القومي"
+                        android:inputType="number" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/count"
+            android:layoutDirection="rtl"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:scaleX=".9"
+            android:scaleY="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layoutDirection="rtl"
+                android:orientation="vertical">
+
+                <design.MyTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="معلومات عن العمل"
+                    android:textColor="#E51937"
+                    android:textSize="15dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/backwhite"
+                android:elevation="8dp"
+                android:layoutDirection="rtl"
+                android:orientation="horizontal"
+                android:paddingBottom="4dp"
+                android:paddingTop="4dp">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/owner" />
+
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="15dp"
+                    android:background="#686262" />
+
+
+                <Spinner
+                    android:id="@+id/spinner_job_employee"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"></Spinner>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/backwhite"
+                android:elevation="8dp"
+                android:layoutDirection="rtl"
+                android:orientation="horizontal"
+                android:paddingBottom="4dp"
+                android:paddingTop="4dp">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/placeholder" />
+
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="15dp"
+                    android:background="#686262" />
+
+
+                <Spinner
+                    android:id="@+id/spinner_location_employee"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp">
+
+                </Spinner>
+
+            </LinearLayout>
+
+            <design.MyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:gravity="center|center_horizontal"
+                android:paddingLeft="10dp"
+                android:text="اماكن العمل الاخرى التي يمكن الانتقال اليها:-"
+                android:textColor="#00456A"
+                android:textSize="15dp" />
+
+            <EditText
+                android:id="@+id/other_locations"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#c7c7c7"
+                android:gravity="right"
+                android:hint="مثال:القاهرة,الاسكندرية"
+                android:inputType="textEmailAddress" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/count"
+            android:layoutDirection="rtl"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:scaleX=".9"
+            android:scaleY="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layoutDirection="rtl"
+                android:orientation="vertical">
+
+                <design.MyTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="تكلفة العمل"
+                    android:textColor="#E51937"
+                    android:textSize="15dp" />
+
+                <design.MyTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center"
+                    android:paddingRight="5dp"
+                    android:text=" يمكنك ترك خانات التكلفة فارغه لتكون بالاتفاق مع العميل "
+                    android:textColor="#00456A"
+                    android:textSize="9dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/backwhite"
+                    android:layoutDirection="rtl"
+                    android:orientation="horizontal"
+                    android:paddingRight="10dp"
+
+
+                    >
+
+                    <EditText
+                        android:id="@+id/ed_messure"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#c7c7c7"
+                        android:gravity="right"
+                        android:hint="وحدة العمل :-مثال:متر مربع"
+                        android:inputType="textEmailAddress" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/backwhite"
+                    android:layoutDirection="rtl"
+                    android:orientation="horizontal"
+                    android:paddingRight="10dp">
+
+                    <EditText
+                        android:id="@+id/ed_price"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#c7c7c7"
+                        android:gravity="right"
+                        android:hint="سعر العمل بالوحدة "
+                        android:inputType="textEmailAddress" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/backwhite"
+                    android:layoutDirection="rtl"
+                    android:orientation="horizontal"
+                    android:paddingRight="10dp"
+
+
+                    >
+
+                    <EditText
+                        android:id="@+id/ed-price_out_location"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#c7c7c7"
+                        android:gravity="right"
+                        android:hint="السعر في حالة الانتقال"
+                        android:inputType="textEmailAddress" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="20dp"
+                android:background="@drawable/btnred"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="8dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <design.MyTextView
+                    android:id="@+id/tv_done"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:onClick="UserDone"
+                    android:text="تسجيل"
+                    android:textColor="#fff"
+                    android:textSize="20dp" />
+
+
+            </LinearLayout>
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </android.support.v7.widget.LinearLayoutCompat>
+
+</ScrollView>
